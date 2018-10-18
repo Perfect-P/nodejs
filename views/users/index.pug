@@ -1,14 +1,23 @@
 extends ../layout/common.pug
 
-block content  
-    a(href="/users/create") New user
-    form(action="/users/search", method="GET")
-        input(type="text", name="q")
-        button search
-        
-    ul 
+block content
+    h1
+        span Devices
+    a.btn.btn-primary(href="/users/create") New user
+
+    .d-flex.align-items-center
+        form.ml-auto(action="/users/search", method="GET")
+            input(type="text", name="q")
+            button(class="btn btn-primary ml-2") search
+
+    table.table
+        tr
+            th Name
+            th IMEI
+            th More
         each user in users
-            li
-                span=user.name
-                span &nbsp
-                a(href='/users/'+ user.id) View
+            tr
+                td= user.name
+                td= user.imei
+                td 
+                    a(href='/users/'+ user.id) View
