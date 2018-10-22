@@ -1,19 +1,23 @@
 {
   "users": [
     {
-      "name": "Pixel 3",
-      "imei": "090988989789",
-      "id": "uelwJOxVo"
+      "name": "Hao",
+      "phone": "0989788",
+      "id": "1223445",
+      "email": "hao@gmail.com",
+      "password": "123456"
     },
     {
-      "name": "Samsung S9",
-      "imei": "0998976655656",
-      "id": "8b8w_20sp"
+      "name": "kaiser",
+      "phone": "19893782824",
+      "id": "LrsaM1W_x",
+      "email": "kaiser@email.com",
+      "password": "123"
     },
     {
-      "name": "Samsung S8",
-      "imei": "28472864828681",
-      "id": "Q3UJ6OcZ1"
+      "name": "perfect",
+      "phone": "359368687638",
+      "id": "m7YhpX-3v"
     }
   ]
 }

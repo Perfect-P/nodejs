@@ -2,7 +2,7 @@ extends ../layout/common.pug
 
 block content
     h1
-        span Devices
+        span Users
     a.btn.btn-primary(href="/users/create") New user
 
     .d-flex.align-items-center
@@ -13,11 +13,11 @@ block content
     table.table
         tr
             th Name
-            th IMEI
+            th Phone
             th More
         each user in users
             tr
                 td= user.name
-                td= user.imei
+                td= user.phone
                 td 
                     a(href='/users/'+ user.id) View
