@@ -14,6 +14,9 @@ html
                     li.nav-item
                         a.nav-link(href='#') News
                     li.nav-item
-                        a.nav-link(href='#') Info   
+                        a.nav-link(href='#') Info     
+            if user
+                p=user.name 
+
         .container.pt-5
             block content
